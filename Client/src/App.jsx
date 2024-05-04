@@ -4,6 +4,7 @@ import React from "react";
 import BlockList from "./pages/BlockList";
 import SingleBlock from "./pages/SingleBlock";
 import NewTransaction from "./pages/NewTransaction";
+import MineBlock from "./pages/MineBlock";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <BlockList />
       <SingleBlock />
       <NewTransaction />
+      <MineBlock />
     </div>
   );
 };
