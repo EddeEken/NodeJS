@@ -8,7 +8,10 @@ function CryptoBlockchain() {
   this.createBlock(1, "Genesis", "Genesis");
 }
 
-CryptoBlockchain.prototype.createBlock = function (nonce, previousHash, hash) {
+CryptoBlockchain.prototype.createBlock = function (previousHash) {
+  const nonce = this.proofOfWork(previousHash, this.pendingTransactions);
+  const hash = this.hashBlock(previousHash, this.pendingTransactions, nonce);
+
   const block = {
     index: this.chain.length + 1,
     timestamp: Date.now(),
