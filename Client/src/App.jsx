@@ -1,10 +1,9 @@
-import './App.css'
+import "./App.css";
 
-// npm install axios 
-import React from 'react';
-import BlockList from './BlockList';
-import SingleBlock from './SingleBlock';
-import NewTransaction from './NewTransaction';
+import React from "react";
+import BlockList from "./pages/BlockList";
+import SingleBlock from "./pages/SingleBlock";
+import NewTransaction from "./pages/NewTransaction";
 
 const App = () => {
   return (

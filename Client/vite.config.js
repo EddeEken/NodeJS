@@ -4,10 +4,10 @@ import pages from "vite-plugin-react-pages";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react(), pages()],
-    server: {
-        proxy: {
-            "/api": "http://localhost:3000",
-        },
+  plugins: [react(), pages()],
+  server: {
+    proxy: {
+      "/api/v1": "http://localhost:3000",
     },
+  },
 });
