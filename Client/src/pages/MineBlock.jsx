@@ -18,13 +18,13 @@ const MineBlock = () => {
 
   return (
     <div>
-      <h2>Solidifiera transaktion</h2>
+      <h2>Mine block</h2>
       <button id="mine-btn" onClick={mineBlock}>
-        Utvinn block
+        Mine block
       </button>
-      {minedBlock && ( // Render the mined block if it exists
+      {minedBlock && ( 
         <div>
-          <h3>Utvinnt block:</h3>
+          <h3>Mined block:</h3>
           <p>Index: {minedBlock.index}</p>
           <p>Timestamp: {minedBlock.timestamp}</p>
           <p>Nonce: {minedBlock.nonce}</p>

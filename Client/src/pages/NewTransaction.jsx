@@ -56,10 +56,10 @@ const NewTransaction = () => {
 
   return (
     <div>
-      <h2>Lägg till en ny transaktion</h2>
+      <h2>Add new transaction</h2>
       <div>
-        <label htmlFor="amount">Amount:</label>
-        <input
+        <label htmlFor="amount">Amount: </label>
+        <input className="input-transaction"
           type="number"
           id="amount"
           value={amount}
@@ -67,8 +67,8 @@ const NewTransaction = () => {
         />
       </div>
       <div>
-        <label htmlFor="sender">Sender:</label>
-        <input
+        <label htmlFor="sender">Sender: </label>
+        <input className="input-transaction"
           type="text"
           id="sender"
           value={sender}
@@ -76,15 +76,15 @@ const NewTransaction = () => {
         />
       </div>
       <div>
-        <label htmlFor="recipient">Recipient:</label>
-        <input
+        <label htmlFor="recipient">Recipient: </label>
+        <input className="input-transaction" 
           type="text"
           id="recipient"
           value={recipient}
           onChange={handleRecipientChange}
         />
       </div>
-      <button onClick={handleSubmit}>Lägg till</button>
+      <button id="add-btn" onClick={handleSubmit}>Add transaction</button>
       {addedTransaction && (
         <div>
           <h3>Added Transaction:</h3>

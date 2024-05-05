@@ -25,18 +25,18 @@ const BlockList = () => {
 
   return (
     <div>
-      <h2>Blockkedjans block</h2>
+      <h2>The Blockchain</h2>
       <ol>
         {blocks.map((block, index) => (
           <li key={index}>
             {" "}
             {/* Use index as key */}
-            Blockindex: {block.index}, Tidsstämpel: {block.timestamp} Antal
-            transaktioner: {block.transactions.length}
+            Block index: {block.index}, Time stamp: {block.timestamp}, Number of
+            transactions: {block.transactions.length}
           </li>
         ))}
       </ol>
-      <button onClick={() => window.location.reload()}>Uppdatera</button>
+      <button onClick={() => window.location.reload()}>Update</button>
     </div>
   );
 };

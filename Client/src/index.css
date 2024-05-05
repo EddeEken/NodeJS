@@ -93,6 +93,8 @@ input {
 ol {
   width: 40rem;
   padding-inline-start: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -102,6 +104,8 @@ li {
   display: inline;
   font-weight: 100; 
   font-size: 1rem;
+  width: fit-content;
+  margin: 5px;
 }
 
 p {
@@ -110,4 +114,13 @@ p {
 
 #mine-btn {
   margin-left: 0px;
+}
+
+.input-transaction {
+  margin: 10px;
+  margin-left: 10px;
+  
+}
+#add-btn {
+  margin-left: 0;
 }
