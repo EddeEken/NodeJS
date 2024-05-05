@@ -9,6 +9,7 @@ import MineBlock from "./pages/MineBlock";
 const App = () => {
   return (
     <div id="display-wrapper">
+      <h1>ZMEF Crypto Hub</h1>
       <BlockList />
       <SingleBlock />
       <NewTransaction />
