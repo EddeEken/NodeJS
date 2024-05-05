@@ -23,7 +23,7 @@ const NewTransaction = () => {
     <div>
       <h2>Lägg till en ny transaktion</h2>
       <input type="text" value={transactionData} onChange={handleInputChange} />
-      <button onClick={handleSubmit}>Lägg till transaktion</button>
+      <button onClick={handleSubmit}>Lägg till</button>
     </div>
   );
 };

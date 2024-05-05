@@ -38,9 +38,9 @@ const SingleBlock = () => {
 
   return (
     <div>
-      <h2>Hämta ett specifikt block</h2>
+      <h2>Hitta ett specifikt block</h2>
       <input type="text" value={blockId} onChange={handleInputChange} />
-      <button onClick={handleClick}>Hämta block</button>
+      <button onClick={handleClick}>Sök block</button>
       {blockData && <p>Block data: {JSON.stringify(blockData)}</p>}
     </div>
   );

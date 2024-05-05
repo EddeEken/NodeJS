@@ -1,20 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Monserrat", sans-serif;
   line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: rgb(222, 255, 220);
+  background-color: rgb(84, 95, 106);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#display-wrapper {
+  border-radius: 20px;
+  width: fit-content;
+  padding: 2rem;
+  background-color: #444c59;
+}
+
 a {
-  font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -23,28 +29,38 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  font-weight: 100;
+  margin: 15px;
+  padding-left: 30%;
+  padding-top: 8%;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 100;
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; 
+  font-size: 2rem; 
+}
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  font-weight: 100; 
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 1rem;
 }
 button:hover {
   border-color: #646cff;
@@ -65,4 +81,33 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+input {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+ol {
+  width: 40rem;
+  padding-inline-start: 10px;
+}
+
+li {
+  border: 1px solid rgba(145, 255, 218, 0.455);
+  border-radius: 8px;
+  padding: 7px 10px 7px 10px;
+  display: inline;
+  font-weight: 100; 
+  font-size: 1rem;
+}
+
+p {
+  width: 15rem;
+}
+
+#mine-btn {
+  margin-left: 0px;
 }

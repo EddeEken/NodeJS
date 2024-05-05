@@ -26,16 +26,16 @@ const BlockList = () => {
   return (
     <div>
       <h2>Blockkedjans block</h2>
-      <ul>
+      <ol>
         {blocks.map((block, index) => (
           <li key={index}>
             {" "}
             {/* Use index as key */}
-            Block Index: {block.index}, Timestamp: {block.timestamp}{" "}
-            Transactions: {block.transactions.length}
+            Blockindex: {block.index}, Tidsstämpel: {block.timestamp}{" "}
+            Antal transaktioner: {block.transactions.length}
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 };

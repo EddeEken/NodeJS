@@ -8,7 +8,7 @@ import MineBlock from "./pages/MineBlock";
 
 const App = () => {
   return (
-    <div>
+    <div id="display-wrapper">
       <BlockList />
       <SingleBlock />
       <NewTransaction />

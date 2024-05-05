@@ -19,8 +19,8 @@ const handleMine = () => {
 
       return (
         <div>
-        <h2>Mine Block</h2>
-          <button onClick={handleMine}>MINE BLOCK</button>
+        <h2>Solidifiera transaktion</h2>
+          <button id="mine-btn" onClick={handleMine}>Utvinn block</button>
         </div>
       );
   };
