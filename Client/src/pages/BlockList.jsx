@@ -31,11 +31,12 @@ const BlockList = () => {
           <li key={index}>
             {" "}
             {/* Use index as key */}
-            Blockindex: {block.index}, Tidsstämpel: {block.timestamp}{" "}
-            Antal transaktioner: {block.transactions.length}
+            Blockindex: {block.index}, Tidsstämpel: {block.timestamp} Antal
+            transaktioner: {block.transactions.length}
           </li>
         ))}
       </ol>
+      <button onClick={() => window.location.reload()}>Uppdatera</button>
     </div>
   );
 };
