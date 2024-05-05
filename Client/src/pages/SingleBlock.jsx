@@ -44,9 +44,9 @@ const SingleBlock = () => {
 
   return (
     <div>
-      <h2>Hitta ett specifikt block</h2>
-      <input type="text" value={blockId} onChange={handleInputChange} />
-      <button onClick={handleClick}>Sök block</button>
+      <h2>Find a specific block</h2>
+      <input placeholder="Enter block index" type="text" value={blockId} onChange={handleInputChange} />
+      <button onClick={handleClick}>Search block</button>
       {blockData && !blockNotFound && (
         <div>
           <h3>Block data:</h3>
